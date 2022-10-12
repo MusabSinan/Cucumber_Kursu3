@@ -41,7 +41,7 @@ public class _05_DatatableSteps {
     @And("User sending the keys in Dialog content")
     public void userSendingTheKeysInDialogContent(DataTable elements) {
 
-        List<List<String>> ListElements=elements.asLists(String.class);
+        List<List<String>> ListElements=elements.asLists(String.class); //iki boyutlu arraylist
 
         for (int i = 0; i < ListElements.size(); i++) {
 

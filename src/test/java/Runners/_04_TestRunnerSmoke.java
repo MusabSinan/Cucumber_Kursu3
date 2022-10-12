@@ -1,4 +1,4 @@
-package Pages.Runners;
+package Runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions;
         tags = "@SmokeTest", //hangi senaryolarda bu  tag varsa onları çalıştırır
         features = {"src/test/java/FeatureFiles/"},
         glue = {"StepDefinitions"},
-        plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
+        plugin = {"html:target//cucumber-reports.html"}
+       // plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 
 )
 public class _04_TestRunnerSmoke extends AbstractTestNGCucumberTests {

@@ -1,4 +1,4 @@
-package Pages.Runners;
+package Runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
        },
         glue = {"StepDefinitions"}
 )
-//    dryRun = false // true olduğunda testi çalıştırma sadece feature lara
+//    dryRun = false // true olduğunda testi çalıştırmaz sadece feature lara
 //                       // ait steplerin varlığını kontrol eder.
 //                       // false olduğunda ise testi çalıştırır.
 public class _02_TestRunnerBelirliFeaturelar extends AbstractTestNGCucumberTests {

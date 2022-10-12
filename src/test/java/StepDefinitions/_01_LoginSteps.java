@@ -43,9 +43,6 @@ public class _01_LoginSteps {
     @Then("User should login successfuly")
     public void userShouldLoginSuccessfuly() {
 
-        //dc.waitUntilVisible(dc.dashboard);
-        // Assert.assertTrue(dc.dashboard.getText().contains("Dashboard"));
-
         dc.findAndContainsText("dashboard", "Dashboard");
 
     }

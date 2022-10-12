@@ -1,4 +1,4 @@
-package Pages.Runners;
+package Runners;
 
 
 import Utilities.GWD;
@@ -11,8 +11,8 @@ import org.testng.annotations.Parameters;
 
         tags = "@Regression",
         features = {"src/test/java/FeatureFiles/"},
-        glue = {"StepDefinitions"},
-        plugin = {"html:target//cucumber-reports.html"}//bu basit rapor için tanımlanan plug in
+        glue = {"StepDefinitions"}
+        //plugin = {"html:target//cucumber-reports.html"}//bu basit rapor için tanımlanan plug in
 
 )
 public class _08_TestRunnerParallel extends AbstractTestNGCucumberTests {

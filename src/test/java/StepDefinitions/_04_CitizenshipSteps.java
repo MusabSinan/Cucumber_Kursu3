@@ -9,11 +9,11 @@ import io.cucumber.java.en.When;
 public class _04_CitizenshipSteps {
 
     DialogContent dc = new DialogContent();
+    LeftNav ln=new LeftNav();
 
     @And("Navigate to Citizenship page")
     public void navigateToCitizenshipPage() {
 
-        LeftNav ln=new LeftNav();
         ln.findAndClick("setup");
         ln.findAndClick("parameters");
         ln.findAndClick("Citizenship");
